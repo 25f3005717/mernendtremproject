@@ -1,10 +1,4 @@
 # TrailMate
-
-**Plan, match and book group treks, with held seats, test payments and a waitlist.**
-
-- Live app: ADD_VERCEL_URL
-- API health: ADD_RENDER_URL/api/health
-- Demo video: ADD_VIDEO_URL
 - Demo logins: `asha@trailmate.dev` (trekker) and `admin@trailmate.dev` (admin). Password is shared in the submission form.
 
 ## Problem Statement
