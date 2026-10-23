@@ -1,5 +1,5 @@
 # TrailMate
-- Demo logins: `asha@trailmate.dev` (trekker) and `admin@trailmate.dev` (admin). Password is shared in the submission form.
+- Demo logins: `asha@trailmate.dev` (trekker) and `admin@trailmate.dev` (admin). password -> `Demo2026Trek `
 
 ## Problem Statement
 Group treks run in fixed-date batches with limited seats. Trekkers struggle to compare treks, judge which suit their experience, and secure a seat reliably. Organisers lose money and safety margin when batches are overbooked, unpaid seats stay blocked, or cancelled seats are never reused.
@@ -26,7 +26,7 @@ React 18, Vite, React Router (HTML, CSS, JavaScript) · Node.js, Express · Mong
 
 ## Architecture
 ```
-React SPA (Vercel) --HTTPS--> Express API (Render) --> MongoDB Atlas
+ MongoDB Atlas and railway
   pages: Treks, TrekDetail,     routes: auth, treks, bookings, admin
   MyBookings, Admin, Dashboard  services/seats.js: reserve, release, promote waitlist
                                 background sweep: release expired holds every 30s
@@ -43,8 +43,8 @@ Requires Node 18+ and MongoDB (local or Atlas).
 cd server && cp .env.example .env     # set JWT_SECRET and MONGO_URI
 npm install && npm run seed && npm run dev
 
-cd client && npm install && npm run dev   # http://localhost:5173
-```
+cd client && npm install && npm run dev   
+
 Tests (needs local MongoDB): `cd server && npm test`
 
 ## Environment Variables
@@ -60,3 +60,7 @@ Tests (needs local MongoDB): `cd server && npm test`
 
 ## Notes
 Original work; no existing project was used as a base. Payments are simulated.
+
+# deploy link 
+      https://mernendterm-production.up.railway.app/
+
